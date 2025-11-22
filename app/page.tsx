@@ -18,8 +18,7 @@ export default function HomePage() {
           <span>Contatos</span>
         </nav>
       </header>
-      
-      {/*
+
       <section className="relative overflow-hidden bg-gradient-to-r from-[#F1467D] to-[#FEB1CA] text-white">
         <div className="container mx-auto px-4 pt-20 pb-16 lg:pb-0 relative">
           <article className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
@@ -34,7 +33,36 @@ export default function HomePage() {
                 Universos colaborativos para uma educação empreendedora!
               </p>
 
-      <section> aqui vai o banner </section>
+              <div className="flex items-center gap-4">
+                <a
+                  href="#"
+                  className="bg-[#540075] px-6 py-3 rounded-md font-semibold text-white bg-[#761077] border-[3px] border-[#A22479] shadow-[0_0_0_4px_#F1477D]"
+                >
+                  Editais Abertos
+                </a>
+
+                <a
+                  href="#"
+                  className="bg-transparent border border-white text-white px-6 py-3 rounded-md font-semibold"
+                >
+                  Saiba mais
+                </a>
+              </div>
+            </div>
+
+            <div className="relative hidden lg:block h-[380px] w-full">
+              <Image
+                src="/people.png"
+                alt="Imagem de pessoas"
+                fill
+                className="object-cover object-center"
+                quality={100}
+                priority
+              />
+            </div>
+          </article>
+        </div>
+      </section>
 
       <div className="max-w-7xl mx-auto flex flex-col items-center">
 
@@ -70,10 +98,7 @@ export default function HomePage() {
             </div>
           </div>
 
-
           <div className="bg-[#9BE5AA] rounded-[27px] flex items-center justify-center relative w-[270px] h-[185px]">
-
-
             <div className="absolute top-[1%] left-[-16%] w-[350px] h-[179px] z-0 pointer-events-none">
               <Image
                 src="/Vector2.svg"
@@ -115,13 +140,11 @@ export default function HomePage() {
             </div>
           </div>
 
-
         </section>
 
         <section className="w-full flex justify-center gap-[16px] mt-2">
 
           <div className="bg-[#9BE5AA] rounded-[27px] p-8 flex flex-col justify-center relative overflow-hidden w-[339px] h-[265px]">
-
             <div className="absolute top-[2%] -right-[15%] w-[460px] h-[267px] z-0 pointer-events-none opacity-60">
               <Image
                 src="/Vector4.svg"
@@ -140,17 +163,15 @@ export default function HomePage() {
                 identificam a desconexão entre o mercado e educação.
               </p>
             </div>
-
           </div>
 
           <div className="bg-[#98CFFA] rounded-[27px] flex items-center justify-center relative overflow-hidden w-[441px] h-[265px]">
           </div>
 
           <div className="bg-[#FFE5A1] rounded-[27px] p-8 flex flex-col justify-center relative overflow-hidden w-[373px] h-[265px]">
-
-            <div className="absolute bottom-[20%] -right-[15%] w-[460px]  h-[230px] z-0 pointer-events-none opacity-80">
+            <div className="absolute bottom-[20%] -right-[15%] w-[460px] h-[230px] z-0 pointer-events-none opacity-80">
               <Image
-                src="/Vector5.svg" 
+                src="/Vector5.svg"
                 alt="Elemento decorativo"
                 width={450}
                 height={200}
@@ -166,13 +187,14 @@ export default function HomePage() {
                 não tem garantia de formação que proporcione oportunidades de trabalho.
               </p>
             </div>
-
           </div>
+
         </section>
 
         <section>
           <span>seção de benoni</span>
         </section>
+
       </div>
     </main>
   );

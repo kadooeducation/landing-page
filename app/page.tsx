@@ -18,7 +18,21 @@ export default function HomePage() {
           <span>Contatos</span>
         </nav>
       </header>
+      
+      {/*
+      <section className="relative overflow-hidden bg-gradient-to-r from-[#F1467D] to-[#FEB1CA] text-white">
+        <div className="container mx-auto px-4 pt-20 pb-16 lg:pb-0 relative">
+          <article className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+            <div className="space-y-6 max-w-lg">
+              <h1 className="text-4xl lg:text-5xl leading-tight">
+                Formação empreendedora <br />
+                para jovens e escolas <br />
+                com <b className="text-[#540075]">↝</b> impacto real
+              </h1>
 
+              <p className="text-lg opacity-90">
+                Universos colaborativos para uma educação empreendedora!
+              </p>
 
       <section> aqui vai o banner </section>
 

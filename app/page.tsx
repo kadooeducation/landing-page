@@ -3,6 +3,7 @@ import PlataformSection from "@/src/components/PlataformSection";
 import ProblemSection from "@/src/components/ProblemSection";
 import PartnersSection from "@/src/components/PartnersSection";
 import BannerSection from "@/src/components/BannerSection";
+import SolutionsSection from "@/src/components/SolutionsSection";
 
 export default function HomePage() {
   
@@ -83,6 +84,8 @@ export default function HomePage() {
             Uma plataforma web cheia de funcionalidades onde toda a jornada de pré-aceleração acontece!
           </p>
         </section>
+
+        <SolutionsSection />
 
         <PlataformSection />
         

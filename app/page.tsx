@@ -1,10 +1,10 @@
 import Image from "next/image";
-import PlataformSection from "@/src/components/PlataformSection"; 
-import ProblemSection from "@/src/components/ProblemSection";
-import PartnersSection from "@/src/components/PartnersSection";
-import BannerSection from "@/src/components/BannerSection";
-import SolutionsSection from "@/src/components/SolutionsSection";
-import Footer from "@/src/components/Footer";
+import PlataformSection from "@/src/components/Home/PlataformSection"; 
+import ProblemSection from "@/src/components/Home/ProblemSection";
+import PartnersSection from "@/src/components/Home/PartnersSection";
+import BannerSection from "@/src/components/Home/BannerSection";
+import SolutionsSection from "@/src/components/Home/SolutionsSection";
+import Footer from "@/src/components/Home/Footer";
 
 export default function HomePage() {
   

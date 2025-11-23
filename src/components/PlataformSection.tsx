@@ -27,7 +27,7 @@ const items = [
   }
 ];
 
-export default function AccordionSection() {
+export default function PlataformSection() {
   const [openItem, setOpenItem] = useState<number | null>(2); // Começa com o 2 aberto
 
   const toggleItem = (id: number) => {

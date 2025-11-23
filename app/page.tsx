@@ -4,6 +4,7 @@ import ProblemSection from "@/src/components/ProblemSection";
 import PartnersSection from "@/src/components/PartnersSection";
 import BannerSection from "@/src/components/BannerSection";
 import SolutionsSection from "@/src/components/SolutionsSection";
+import Footer from "@/src/components/Footer";
 
 export default function HomePage() {
   
@@ -100,6 +101,7 @@ export default function HomePage() {
         />
 
       </div>
+      <Footer />
     </main>
   );
 }

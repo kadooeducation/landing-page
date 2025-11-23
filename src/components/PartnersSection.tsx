@@ -20,7 +20,7 @@ export default function PartnersSection({ title, items }: PartnersSectionProps) 
         {title}
       </h2>
 
-      <div className="bg-white rounded-[50px] py-12 px-8 overflow-hidden flex relative w-full shadow-sm">
+      <div className="bg-white rounded-[27px] py-12 px-8 overflow-hidden flex relative w-full shadow-sm">
         
         <div className="absolute top-0 left-0 z-10 h-full w-[100px] bg-gradient-to-r from-white to-transparent pointer-events-none" />
         <div className="absolute top-0 right-0 z-10 h-full w-[100px] bg-gradient-to-l from-white to-transparent pointer-events-none" />

@@ -1,9 +1,8 @@
-"use client"; // Obrigatório para componentes interativos
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
 
-// Dados do conteúdo
 const items = [
   {
     id: 1,
@@ -28,24 +27,25 @@ const items = [
 ];
 
 export default function PlataformSection() {
-  const [openItem, setOpenItem] = useState<number | null>(2); // Começa com o 2 aberto
+  const [openItem, setOpenItem] = useState<number | null>(2);
 
   const toggleItem = (id: number) => {
     setOpenItem(openItem === id ? null : id);
   };
 
   return (
-    <section className="w-full max-w-[1200px] mx-auto px-4 mb-20 mt-10">
-      <div className="bg-[#4FA9F5] rounded-[40px] p-8 lg:p-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+    <section className="w-full max-w-[1200px] mx-auto mb-20">
+      <div className="bg-[#4FA9F5] rounded-[40px] p-4 lg:p-4 grid grid-cols-1 lg:grid-cols-2 gap-10 min-h-[550px] items-stretch">
         
-        <div className="flex flex-col gap-4">
+        {/* LADO ESQUERDO: Lista que ocupa toda a altura */}
+        <div className="flex flex-col justify-between h-full">
           {items.map((item) => {
             const isOpen = openItem === item.id;
             return (
               <div
                 key={item.id}
                 onClick={() => toggleItem(item.id)}
-                className="bg-white rounded-2xl p-6 cursor-pointer transition-all duration-200 hover:shadow-md"
+                className="bg-white rounded-2xl p-6 cursor-pointer transition-all duration-200"
               >
                 <div className="flex justify-between items-center">
                   <h3 className="text-xl md:text-2xl font-medium text-[#333]">
@@ -72,13 +72,14 @@ export default function PlataformSection() {
             );
           })}
         </div>
-        <div className="bg-[#C8E8FF] rounded-[30px] min-h-[400px] h-full relative flex items-center justify-center overflow-hidden">
+
+
+        <div className="relative w-full h-full min-h-[400px] lg:min-h-auto">
              <Image
                   src="/plataforma.svg"
-                  alt="Imagem ilustrativa do acordeão"
-                  width={400}
-                  height={400}
-                  className="w-full h-auto object-contain"
+                  alt="Imagem ilustrativa da plataforma"
+                  fill
+                  className="object-contain object-right"
                 />
         </div>
 

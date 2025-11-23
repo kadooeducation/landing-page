@@ -56,6 +56,8 @@ export default function HomePage() {
 
         <ProblemSection />
 
+        <SolutionsSection />
+
         <section className="w-full flex justify-center mt-16 mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E5D6EB] text-[#540075] rounded-md font-medium">
             <svg 
@@ -85,8 +87,6 @@ export default function HomePage() {
             Uma plataforma web cheia de funcionalidades onde toda a jornada de pré-aceleração acontece!
           </p>
         </section>
-
-        <SolutionsSection />
 
         <PlataformSection />
         

@@ -1,8 +1,25 @@
 import Image from "next/image";
-import PlataformSection from "@/src/components/PlataformSection";
+import PlataformSection from "@/src/components/PlataformSection"; 
 import ProblemSection from "@/src/components/ProblemSection";
+import PartnersSection from "@/src/components/PartnersSection";
 
 export default function HomePage() {
+  
+  const parceiros = [
+    { src: "logosecti.png", alt: "Governo do Maranhão" },
+    { src: "/logos/fapema.png", alt: "Fapema" },
+    { src: "/logos/iema.png", alt: "IEMA" },
+    { src: "/logos/defensoria.png", alt: "Defensoria Pública" },
+  ];
+
+  const apoiadores = [
+    { src: "/logos/oxygen.png", alt: "Oxygen Hub" },
+    { src: "/logos/pisim.png", alt: "PISIM" },
+    { src: "/logos/up.png", alt: "UP Produções" },
+    { src: "/logos/impactos.png", alt: "Impactos Positivos" },
+    { src: "/logos/cadimpacto.png", alt: "Cadimpacto" },
+  ];
+
   return (
     <main className="min-h-screen text-2">
 
@@ -81,7 +98,6 @@ export default function HomePage() {
 
         <section className="w-full flex justify-center mt-16 mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E5D6EB] text-[#540075] rounded-md font-medium">
-            {/* Ícone de Lâmpada SVG */}
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="20" 
@@ -111,6 +127,16 @@ export default function HomePage() {
         </section>
 
         <PlataformSection />
+        
+        <PartnersSection 
+          title="Parceiros estratégicos" 
+          items={parceiros} 
+        />
+
+        <PartnersSection 
+          title="Apoiadores e programas" 
+          items={apoiadores} 
+        />
 
       </div>
     </main>

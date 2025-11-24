@@ -10,21 +10,25 @@ export default function HomePage() {
   
   const parceiros = [
     { src: "logosecti.png", alt: "Governo do Maranhão" },
-    { src: "/logos/fapema.png", alt: "Fapema" },
-    { src: "/logos/iema.png", alt: "IEMA" },
-    { src: "/logos/defensoria.png", alt: "Defensoria Pública" },
+    { src: "fapema.png", alt: "Fapema" },
+    { src: "iema.png", alt: "IEMA" },
+    { src: "defp.svg", alt: "Defensoria Pública" },
+    { src: "logosecti.png", alt: "Governo do Maranhão" },
+    { src: "fapema.png", alt: "Fapema" },
+    { src: "iema.png", alt: "IEMA" },
+    { src: "defp.svg", alt: "Defensoria Pública" },
   ];
 
   const apoiadores = [
-    { src: "/logos/oxygen.png", alt: "Oxygen Hub" },
-    { src: "/logos/pisim.png", alt: "PISIM" },
-    { src: "/logos/up.png", alt: "UP Produções" },
+    { src: "hub.png", alt: "Oxygen Hub" },
+    { src: "up.png", alt: "UP Produções" },
+    { src: "/logos/up.png", alt: "UP" },
     { src: "/logos/impactos.png", alt: "Impactos Positivos" },
     { src: "/logos/cadimpacto.png", alt: "Cadimpacto" },
   ];
 
   return (
-    <main className="min-h-screen text-2">
+    <main className="min-h-screen text-2 bg-[#FDF4EB]">
 
       <header className="flex items-center justify-between px-32 py-6">
         <Image

@@ -35,8 +35,6 @@ body {
 .animate-infinite-scroll {
   animation: scroll 25s linear infinite;
 }
-
-/* Opcional: Pausar quando passar o mouse */
-.animate-infinite-scroll:hover {
+.group:hover .animate-infinite-scroll {
   animation-play-state: paused;
 }

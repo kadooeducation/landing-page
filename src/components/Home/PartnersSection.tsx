@@ -3,10 +3,9 @@ import Image from "next/image";
 interface PartnerItem {
   src: string;
   alt: string;
-  width?: number; 
+  width?: number;
   height?: number;
 }
-
 
 interface PartnersSectionProps {
   title: string;
@@ -20,16 +19,16 @@ export default function PartnersSection({ title, items }: PartnersSectionProps) 
         {title}
       </h2>
 
-      <div className="bg-white rounded-[27px] py-12 px-8 overflow-hidden flex relative w-full shadow-sm">
+      <div className="bg-white rounded-[27px] py-12 px-8 overflow-hidden flex relative w-full shadow-sm group">
         
         <div className="absolute top-0 left-0 z-10 h-full w-[100px] bg-gradient-to-r from-white to-transparent pointer-events-none" />
         <div className="absolute top-0 right-0 z-10 h-full w-[100px] bg-gradient-to-l from-white to-transparent pointer-events-none" />
 
-        <div className="flex w-max gap-16 animate-infinite-scroll hover:pause">
+        <div className="flex w-max">
           
-          <div className="flex gap-16 items-center shrink-0">
+          <div className="flex gap-16 items-center shrink-0 animate-infinite-scroll px-8">
             {items.map((item, index) => (
-              <div key={`g1-${index}`} className="relative h-[60px] w-auto flex items-center justify-center">
+              <div key={`list1-${index}`} className="relative h-[60px] w-auto flex items-center justify-center">
                 <img 
                   src={item.src} 
                   alt={item.alt} 
@@ -39,9 +38,9 @@ export default function PartnersSection({ title, items }: PartnersSectionProps) 
             ))}
           </div>
 
-          <div className="flex gap-16 items-center shrink-0">
+          <div className="flex gap-16 items-center shrink-0 animate-infinite-scroll px-8" aria-hidden="true">
             {items.map((item, index) => (
-              <div key={`g2-${index}`} className="relative h-[60px] w-auto flex items-center justify-center">
+              <div key={`list2-${index}`} className="relative h-[60px] w-auto flex items-center justify-center">
                 <img 
                   src={item.src} 
                   alt={item.alt} 

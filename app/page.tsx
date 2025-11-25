@@ -8,7 +8,6 @@ import { Header } from "@/presentation/shared/layout/components/header";
 import Image from "next/image";
 
 const parceiros = [
-  { src: "logosecti.png", alt: "Governo do Maranhão" },
   { src: "fapema.png", alt: "Fapema" },
   { src: "iema.png", alt: "IEMA" },
   { src: "defp.svg", alt: "Defensoria Pública" },
@@ -18,12 +17,55 @@ const parceiros = [
   { src: "defp.svg", alt: "Defensoria Pública" },
 ];
 
-const apoiadores = [
-  { src: "hub.png", alt: "Oxygen Hub" },
-  { src: "up.png", alt: "UP Produções" },
-  { src: "/logos/up.png", alt: "UP" },
-  { src: "/logos/impactos.png", alt: "Impactos Positivos" },
-  { src: "/logos/cadimpacto.png", alt: "Cadimpacto" },
+const supporters = [
+  {
+    src: "/supporters/candipacto.png",
+    alt: "Logo Candipacto",
+  },
+  {
+    src: "/supporters/oxygeni-hub.png",
+    alt: "Logo Oxygeni HUB",
+  },
+  {
+    src: "/supporters/up.png",
+    alt: "Logo Up",
+  },
+  {
+    src: "/supporters/candipacto.png",
+    alt: "Logo Candipacto",
+  },
+  {
+    src: "/supporters/oxygeni-hub.png",
+    alt: "Logo Oxygeni HUB",
+  },
+  {
+    src: "/supporters/up.png",
+    alt: "Logo Up",
+  },
+  {
+    src: "/supporters/candipacto.png",
+    alt: "Logo Candipacto",
+  },
+  {
+    src: "/supporters/oxygeni-hub.png",
+    alt: "Logo Oxygeni HUB",
+  },
+  {
+    src: "/supporters/up.png",
+    alt: "Logo Up",
+  },
+  {
+    src: "/supporters/candipacto.png",
+    alt: "Logo Candipacto",
+  },
+  {
+    src: "/supporters/oxygeni-hub.png",
+    alt: "Logo Oxygeni HUB",
+  },
+  {
+    src: "/supporters/up.png",
+    alt: "Logo Up",
+  },
 ];
 
 export default function HomePage() {
@@ -135,11 +177,10 @@ export default function HomePage() {
         </section>
 
         <PlataformSection />
-
-        <PartnersSection title="Parceiros estratégicos" items={parceiros} />
-
-        <PartnersSection title="Apoiadores e programas" items={apoiadores} />
       </div>
+      <PartnersSection title="Parceiros estratégicos" items={parceiros} />
+
+      <PartnersSection title="Apoiadores" items={supporters} />
 
       <Footer />
     </main>

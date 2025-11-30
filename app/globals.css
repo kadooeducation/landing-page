@@ -23,6 +23,7 @@
 
 body {
   background: var(--background);
+  font-family: var(--font-sulphur-point-sans);
 }
 
 @keyframes scroll {

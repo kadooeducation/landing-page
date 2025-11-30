@@ -49,16 +49,6 @@ export default function ProblemSection() {
         </div>
 
         <div className="bg-[#C6C2F7] rounded-[27px] p-8 flex flex-col justify-center relative overflow-hidden w-[466px] h-[185px]">
-          <div className="absolute top-[0%] left-[-4%] w-[490px] h-[190px] z-0 pointer-events-none">
-            <Image
-              src="/Vector3.svg"
-              alt="Elemento decorativo"
-              width={425}
-              height={115}
-              className="w-full h-full object-contain"
-            />
-          </div>
-
           <div className="relative z-10">
             <h3 className="text-[#5A4CA0] text-5xl md:text-6xl font-semibold leading-tight mb-2 tracking-tight">
               92.9%

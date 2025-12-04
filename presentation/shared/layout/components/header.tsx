@@ -6,7 +6,7 @@ export function Header() {
     <header>
         <nav className="flex items-center justify-between px-4 py-4 sm:px-8 lg:px-32 lg:py-6">
           <Image
-            src="/logo.png"
+            src="/new_logo.png"
             alt="Logo da Kadoo Edu"
             width={117}
             height={51}

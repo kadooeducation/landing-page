@@ -36,7 +36,7 @@ export default function PlataformSection() {
 
   return (
     <section className="w-full max-w-[1200px] mx-auto mb-20">
-      <div className="bg-[#4FA9F5] rounded-[40px] p-4 lg:p-4 grid grid-cols-1 lg:grid-cols-2 gap-10 min-h-[550px] items-stretch">
+      <div className="bg-[#4FA9F5] rounded-3xl p-4 lg:p-4 grid grid-cols-1 lg:grid-cols-2 gap-10 min-h-[550px] items-stretch">
         <div className="flex flex-col justify-between h-full gap-6">
           {items.map((item) => {
             const isOpen = openItem === item.id;
@@ -109,7 +109,7 @@ export default function PlataformSection() {
             src="/plataforma.svg"
             alt="Imagem ilustrativa da plataforma"
             fill
-            className="object-cover rounded-md"
+            className="object-cover rounded-3xl"
           />
         </div>
       </div>

@@ -6,6 +6,7 @@ import Footer from "@/src/components/Home/Footer";
 
 import { Header } from "@/presentation/shared/layout/components/header";
 import Image from "next/image";
+import ProblemSection from "@/src/components/Home/ProblemSection";
 
 const parceiros = [
   { src: "fapema.png", alt: "Fapema" },
@@ -76,72 +77,7 @@ export default function HomePage() {
       <BannerSection />
 
       <div className="max-w-7xl mx-auto flex flex-col items-center px-8 md:px-5 lg:px-0">
-        <section className="pt-16 flex flex-col items-center w-full">
-          <h2 className="text-3xl md:text-5xl font-semibold text-center mb-4 text-[#333333] tracking-tight">
-            O Problema que resolvemos
-          </h2>
-          <p className="text-base md:text-lg text-center max-w-lg mx-auto text-[#5C5C5C] leading-relaxed">
-            Hoje no Brasil, milhões de jovens enfrentam desafios para se inserir
-            no mercado de trabalho
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full gap-4 mt-12">
-            <div className="bg-[#FFE5A1] rounded-[27px] p-8 flex flex-col justify-center relative overflow-hidden h-[185px]">
-              <div className="absolute top-[10%] right-0 w-full  h-[120px] z-0 pointer-events-none">
-                <Image
-                  src="/Vector1.svg"
-                  alt="Elemento decorativo"
-                  fill
-                  className="hidden lg:block"
-                />
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-[#00963F] text-4xl md:text-5xl font-semibold leading-none mb-2 tracking-tight">
-                  +9
-                  <br />
-                  milhões
-                </h3>
-                <p className="text-[#4A4A4A] text-lg md:text-xl leading-tight font-medium">
-                  de jovens não se inserem no mercado de trabalho.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#C6C2F7] rounded-[27px] p-8 flex flex-col justify-center relative overflow-hidden h-[185px]">
-              <div className="relative z-10">
-                <h3 className="text-[#5A4CA0] text-5xl md:text-6xl font-semibold leading-tight mb-2 tracking-tight">
-                  92.9%
-                </h3>
-                <p className="text-[#4A4A4A] text-lg md:text-xl leading-tight font-medium">
-                  estão sem preparação e recursos educacionais
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#9BE5AA] rounded-[27px] p-8 flex flex-col justify-center relative overflow-hidden h-[185px]">
-              <div className="relative z-10">
-                <h3 className="text-[#5A4CA0] text-4xl md:text-5xl font-semibold leading-none mb-2 tracking-tight">
-                  75%
-                </h3>
-                <p className="text-[#4A4A4A] text-lg md:text-xl leading-tight font-medium">
-                  identificam a desconexão entre o mercado e educação.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#FFE5A1] rounded-[27px] p-8 flex flex-col justify-center relative overflow-hidden h-[185px]">
-              <div className="relative z-10">
-                <h3 className="text-[#5A4CA0] text-5xl md:text-6xl font-semibold leading-tight mb-2 tracking-tight">
-                  80%
-                </h3>
-                <p className="text-[#4A4A4A] text-lg md:text-xl leading-tight font-medium">
-                  não tem garantia de formação que proporcione oportunidades de
-                  trabalho.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ProblemSection />
 
         <SolutionsSection />
 
